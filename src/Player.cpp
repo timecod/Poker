@@ -1,7 +1,7 @@
 #include "Player.h"
 #include <string>
 
-Player::Player (char name []) {
+Player::Player (char * name) {
     coins = 1000;
     this->name = name;
 }
@@ -14,7 +14,10 @@ int Player::get_coins () { return coins; }
 
 Card * Player::get_card (int id) { return cards[id]; }
 
-bool Player::is_playing () { return playing; }
+void Player::set_status (bool status) { this->status = status; }
+
+bool Player::is_playing () { return status; }
+
 void Player::set_cards (Card * cards []) { for (int i = 0; i < 2; ++i) this->cards.push_back(cards[i]); }
 
 Player::~Player () {

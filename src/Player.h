@@ -7,14 +7,15 @@ class Player {
     std::string name;
     unsigned int coins;
     std::vector <Card *> cards;
-    bool playing;
+    bool status;
     public:
-    Player (char name []);
+    Player (char *);
     ~Player ();
     std::string get_name ();
-    void change_coins (int value);
+    void change_coins (int);
     int get_coins ();
+    void set_status (bool);
     bool is_playing ();
-    Card * get_card (int id);
-    void set_cards (Card * cards []);
+    Card * get_card (int);
+    void set_cards (Card **);
 };

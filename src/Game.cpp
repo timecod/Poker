@@ -14,6 +14,7 @@ Game::Game (Player ** players) {
 		table[i] = C.take_card();
 	}
 	for (int i = 0; i < this->players.size(); ++i) {
+		this->players[i]->set_status(1);
 		Card * cards [2] = { C.take_card(), C.take_card() };
 		this->players[i]->set_cards(cards);
 	}
