@@ -1,4 +1,5 @@
-# Prototype
+# Poker
+Now it is prototype
 show: 
 	random table cards
 	random first player cards
