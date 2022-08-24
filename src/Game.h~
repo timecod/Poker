@@ -1,0 +1,15 @@
+#pragma once
+
+#include <vector>
+#include "Player.h"
+#include "Card.h"
+
+class Game {
+	Card * table [5];
+	std::vector <Player *> players;
+	int step;
+	void update ();
+public:
+	Game (Player * players []);
+	~Game ();
+};

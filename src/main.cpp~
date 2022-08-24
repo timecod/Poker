@@ -1,0 +1,10 @@
+#include <iostream>
+#include "Card.h"
+
+using namespace std;
+
+int main() {
+    Card a(1, 1);
+    cout << a.get_number() << " " << a.get_suit();
+    return 0;
+}
