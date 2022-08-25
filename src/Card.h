@@ -1,4 +1,5 @@
 #pragma once
+
 // Класс карты
 class Card {
     int suit; //масть
@@ -6,6 +7,6 @@ class Card {
     public:
     Card (int number, int suit);
     Card (int numer);
-    char * get_number ();
+    const char * get_number ();
     char get_suit ();
 };

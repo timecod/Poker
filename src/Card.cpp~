@@ -1,9 +1,0 @@
-#include "Card.h"
-
-Card::Card(int number, int suit) : number(number), suit(suit) {};
-
-int Card::get_number() { return number; }
-
-int Card::get_suit() {return suit; }
-
-Card::Card(int numer) { suit = numer / 13; number = numer % 13; }

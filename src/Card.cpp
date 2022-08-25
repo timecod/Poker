@@ -2,8 +2,8 @@
 
 Card::Card(int number, int suit) : number(number), suit(suit) {};
 
-char * Card::get_number() {
-	char * alphavit [13] = {"2 ", "3 ", "4 ", "5 ", "6 ", "7 ", "8 ", "9 ", "10", "J ", "D ", "K ", "A "};
+const char * Card::get_number() {
+	const char * alphavit [13] = {"2 ", "3 ", "4 ", "5 ", "6 ", "7 ", "8 ", "9 ", "10", "J ", "D ", "K ", "A "};
 	return alphavit[number]; 
 }
 

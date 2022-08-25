@@ -4,12 +4,17 @@
 using namespace std;
 
 int main() {
-    Player * pls[3]  = {
+    Player * players [5] = {
         new Player("Anna"),
         new Player("Elza"),
-        new Player("Violet")
+        new Player("Violet"),
+        new Player("Kara"),
+        new Player("Maya")
     };
-    Game A(pls);
-    for (int i = 0; i < 3; ++i) delete pls[i];
+    Game A(players, 5);
+    try {
+        while (true) { A.update(); }
+    } catch (const char * str) { cout << str << endl; }
+    for( int i = 0; i < 5; ++i) delete players[i];
     return 0;
 }
