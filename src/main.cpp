@@ -11,7 +11,7 @@ int main() {
         new Player("Kara"),
         new Player("Maya")
     };
-    Game A(players, 5);
+    Game A(players, 5, 4);
     try {
         while (true) { A.update(); }
     } catch (const char * str) { cout << str << endl; }
